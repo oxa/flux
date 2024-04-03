@@ -8,7 +8,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: fluxcd-2022
+    branch: main
   secretRef:
     name: flux-system
   url: https://github.com/oxa/flux.git
