@@ -77,11 +77,11 @@ Then we can bootstrap it using the GitHub bootstrap method
 ```
 flux bootstrap github \
   --token-auth \
-  --owner=marcel-dempers \
-  --repository=docker-development-youtube-series \
+  --owner=oxa \
+  --repository=flux \
   --path=kubernetes/fluxcd/repositories/infra-repo/clusters/dev-cluster \
   --personal \
-  --branch fluxcd-2022
+  --branch main
 
 flux check
 
@@ -230,7 +230,7 @@ flux bootstrap github \
   --path=kubernetes/fluxcd/repositories/infra-repo/clusters/dev-cluster \
   --components-extra=image-reflector-controller,image-automation-controller \
   --personal \
-  --branch fluxcd-2022
+  --branch main
 ```
 We need to create a image registry credential where we will push our image:
 
